@@ -14,7 +14,6 @@ class ProductViewModel : ViewModel() {
 
     fun fetchProducts() {
 
-        // Prevent reloading API if products already exist
         if (productList.isNotEmpty()) return
 
         viewModelScope.launch {
